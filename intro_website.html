@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samagya Sharma</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            position: relative;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            overflow: hidden;
+        }
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, #4CAF50, #001F54);
+            background-size: 200% 200%;
+            animation: gradientAnimation 6s infinite;
+            z-index: 1;
+        }
+        header h1, header p {
+            position: relative;
+            z-index: 2;
+        }
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #001F54; /* Navy blue color */
+            border-bottom: 2px solid #001F54; /* Navy blue color */
+            padding-bottom: 5px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        .contact {
+            margin-top: 20px;
+        }
+        a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <canvas id="particlesCanvas"></canvas>
+        <h1>Samagya Sharma</h1>
+        <p>Software Engineer | Android Framework Specialist | Tech Enthusiast</p>
+    </header>
+    <div class="container">
+        <section>
+            <h2>About Me</h2>
+            <p>Hi! I'm Samagya Sharma, a dedicated software engineer with extensive experience in Android framework development. Currently, I work at Samsung Research and Development Institute, focusing on improving multitasking and graphics experiences for flagship and budget models.</p>
+        </section>
+
+        <section>
+            <h2>Work Experience</h2>
+            <ul>
+                <li>
+                    <strong>Software Engineer, Android Framework MultiTasking</strong> (Feb 2024 – Present)
+                    <ul>
+                        <li>Developed and debugged multitasking features like pop-up view, split view, and Samsung Dex for flagship and budget models.</li>
+                        <li>Collaborated with South Korea HQ to integrate new AOSP changes for each Android release.</li>
+                        <li>Enhanced user experience for apps like YouTube, Instagram, and Facebook on multiwindow and fold/flip devices.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Software Engineer, Android Framework Graphics</strong> (Jun 2022 – Jan 2024)
+                    <ul>
+                        <li>Debugged graphics core issues, including rendering and SurfaceFlinger-related problems.</li>
+                        <li>Worked with Qualcomm on device bring-ups and OS upgrades for Snapdragon-powered devices.</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Projects</h2>
+            <ul>
+                <li>
+                    <strong>Android Malware Detection System</strong> (2024) - <em>Machine Learning, Python</em>
+                    <p>Leveraged machine learning to classify applications as malicious or benign based on their permissions.</p>
+                </li>
+                <li>
+                    <strong>Verilog Modeling of MIPS32 Pipeline</strong> (2022) - <em>Verilog</em>
+                    <p>Implemented MIPS32 processor pipeline in Verilog and tested it with custom test benches.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            <ul>
+                <li>
+                    <strong>B.Tech, Electronics and Communication Engineering</strong> (2018 – 2022)
+                    <br>J.C. Bose University of Science and Technology, YMCA - CGPA: 8.32
+                </li>
+                <li>
+                    <strong>12th Grade</strong> (2018) - Delhi Public School, Gurgaon - Percentage: 96.6%
+                </li>
+                <li>
+                    <strong>10th Grade</strong> (2016) - Delhi Public School, Gurgaon - CGPA: 10
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Technical Skills</h2>
+            <ul>
+                <li><strong>Languages:</strong> C, C++, Java, Verilog</li>
+                <li><strong>Developer Tools:</strong> Visual Studio, Android Studio, Winscope, Layout Inspector, Code.i</li>
+                <li><strong>Technologies:</strong> Android, Linux, Operating Systems, OOP Concepts, Data Structures & Algorithms</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Certifications</h2>
+            <ul>
+                <li>NPTEL - Problem Solving Through Programming in C (Silver+Elite)</li>
+                <li>NPTEL - An Introduction to Programming Through C++ (Silver+Elite)</li>
+                <li>NPTEL - Programming in Java (Silver+Elite)</li>
+                <li>Certified in Artificial Intelligence: Intermediate Level by Samsung Electronics</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Achievements</h2>
+            <ul>
+                <li>Best Squad Award, Samsung Incredible Awards (Q3 2023)</li>
+                <li>Software Competency Professional Grade and Advanced Grade Achiever (Samsung internal exams)</li>
+                <li>Gold Medalist, Delhi Public School, Gurgaon</li>
+            </ul>
+        </section>
+
+        <section class="contact">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:samagyasharma05@gmail.com">samagyasharma05@gmail.com</a></p>
+            <p>Phone: <a href="tel:+919667965550">+91 9667965550</a></p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/samagya-sharma" target="_blank">linkedin.com/in/samagya-sharma</a></p>
+            <p>GitHub: <a href="https://github.com/samagyasharma/verilog_project" target="_blank">github.com/samagyasharma/verilog_project</a></p>
+        </section>
+    </div>
+    <script>
+        const canvas = document.getElementById('particlesCanvas');
+        const ctx = canvas.getContext('2d');
+        canvas.width = window.innerWidth;
+        canvas.height = 150;
+
+        const particles = Array.from({ length: 100 }).map(() => ({
+            x: Math.random() * canvas.width,
+            y: Math.random() * canvas.height,
+            radius: Math.random() * 3 + 1,
+            dx: Math.random() * 2 - 1,
+            dy: Math.random() * 2 - 1
+        }));
+
+        function drawParticles() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            particles.forEach(p => {
+                ctx.beginPath();
+                ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+                ctx.fillStyle = 'rgba(255, 255, 255, 0.7)';
+                ctx.fill();
+
+                p.x += p.dx;
+                p.y += p.dy;
+
+                if (p.x < 0 || p.x > canvas.width) p.dx *= -1;
+                if (p.y < 0 || p.y > canvas.height) p.dy *= -1;
+            });
+        }
+
+        setInterval(drawParticles, 50);
+    </script>
+</body>
+</html>
